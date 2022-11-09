@@ -1,0 +1,10 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postStartCommand": [
+    "./.devcontainer/post-start.sh",
+    "${containerWorkspaceFolder}"
+  ],
+  "remoteUser": "vscode"
+}
