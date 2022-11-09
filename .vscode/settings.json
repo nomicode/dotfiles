@@ -1,0 +1,24 @@
+{
+    "ltex.diagnosticSeverity": "hint",
+    "ltex.enabled": [
+        "dockerfile",
+        "markdown",
+        "plaintext",
+        "shellscript"
+    ],
+    "files.associations": {
+        "dictionary.txt": "code-text-binary",
+        "disabled-rules.txt": "code-text-binary",
+        "hidden-false-positives.txt": "code-text-binary",
+        "COMMIT_EDITMSG": "markdown"
+    },
+    "ltex.dictionary": {
+        "en-US": [":../.config/dictionary.txt"]
+    },
+    "ltex.disabledRules": {
+        "en-US": [":../.config/ltex/disabled-rules.txt"]
+    },
+    "ltex.hiddenFalsePositives": {
+        "en-US": [":../.config/ltex/hidden-false-positives.txt"]
+    },
+}
