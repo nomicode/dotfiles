@@ -1,1 +1,9 @@
 setfacl
+NONINFRINGEMENT
+umask
+devcontainer
+nomi
+ltex
+vscode
+json
+ci

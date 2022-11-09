@@ -1,0 +1,9 @@
+{"rule":"AND_OR","sentence":"^\\Q(.*) copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software(.*)\\E$"}
+{"rule":"EN_QUOTES","sentence":"^\\QTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND(.*)\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRUN apt-get update -y (.*)\\E$"}
+{"rule":"SENT_START_ALL_CAPITALS","sentence":"^\\QRUN apt-get update -y (.*)\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Q([a-z]+)\(([a-z]+)\): (.)\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qinteractive rebase in progress; onto ([a-z0-9]+)(.*)\\E$"}
+{"rule":"WHITESPACE_RULE","sentence":"^\\QAuthor:    (.*) \nDate:      (.*)\\E$"}
+{"rule":"WHITESPACE_RULE","sentence":"^\\QChanges not staged for commit:\n(([a-z]+):   (.*)\n)+\\E$"}
+{"rule":"WHITESPACE_RULE","sentence":"^\\QChanges to be committed:\n(([ a-z]+):   (.*)\n)+)\\E$"}
