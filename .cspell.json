@@ -1,0 +1,21 @@
+{
+  "allowCompoundWords": true,
+  "caseSensitive": false,
+  "validateDirectives": true,
+  "minWordLength": 4,
+  "files": [".*", "*", ".*/**", "*/**"],
+  "language": "en-US",
+  "dictionaryDefinitions": [
+    {
+      "name": "custom",
+      "path": ".dict.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": ["custom"],
+  "ignorePaths": [
+    ".dict.txt",
+    ".config/ltex/disabled-rules.txt",
+    ".config/ltex/hidden-false-positives.txt"
+  ]
+}
