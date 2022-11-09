@@ -3,8 +3,10 @@ allowCompoundWords: true
 caseSensitive: false
 minWordLength: 4
 files:
-  - '**'
-  - .**
+  - .*
+  - '*'
+  - .*/**
+  - '*/**'
 ignorePaths:
   - dictionary.txt
 language: en-US
