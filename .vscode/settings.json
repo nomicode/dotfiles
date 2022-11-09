@@ -13,7 +13,7 @@
     "COMMIT_EDITMSG": "markdown"
   },
   "ltex.dictionary": {
-    "en-US": [":../.config/dictionary.txt"]
+    "en-US": [":../.dict.txt"]
   },
   "ltex.disabledRules": {
     "en-US": [":../.config/ltex/disabled-rules.txt"]
