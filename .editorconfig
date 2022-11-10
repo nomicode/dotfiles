@@ -11,3 +11,6 @@ trim_trailing_whitespace = true
 
 [*.sh]
 indent_size = 4
+
+[*.md]
+line_length=off

@@ -7,3 +7,6 @@ NONINFRINGEMENT
 setfacl
 umask
 vscode
+devcontainers
+dotfiles
+Dotfiles
