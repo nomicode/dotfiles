@@ -2,3 +2,17 @@
   rebase = true
 [push]
   autoSetupRemote = true
+[aliases]
+  st = status
+  co = checkout
+  br = branch
+  # Create and checkout a new branch
+  nb = checkout -b
+  # Show the last commit
+  last = log -1 HEAD
+  # Undo the last commit (and keep the changes)
+  undo = reset --soft HEAD^1
+  # Remove any ignored files (e.g., build files)
+  clean-ignored = "clean -dX"
+  # Print the repository root directory
+  root-dir = rev-parse --show-toplevel
