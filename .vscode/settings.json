@@ -9,8 +9,7 @@
   "files.associations": {
     "dictionary.txt": "code-text-binary",
     "disabled-rules.txt": "code-text-binary",
-    "hidden-false-positives.txt": "code-text-binary",
-    "COMMIT_EDITMSG": "markdown"
+    "hidden-false-positives.txt": "code-text-binary"
   },
   "ltex.dictionary": {
     "en-US": [":../.dict.txt"]
