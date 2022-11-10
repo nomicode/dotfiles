@@ -7,6 +7,8 @@
     "shellscript"
   ],
   "files.associations": {
+    ".vscode/*.json": "jsonc",
+    // Disable spell checking
     "dictionary.txt": "code-text-binary",
     "disabled-rules.txt": "code-text-binary",
     "hidden-false-positives.txt": "code-text-binary"
