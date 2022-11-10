@@ -7,12 +7,12 @@
   "language": "en-US",
   "dictionaryDefinitions": [
     {
-      "name": "custom",
+      "name": "repo",
       "path": ".dict.txt",
       "addWords": true
     }
   ],
-  "dictionaries": ["custom"],
+  "dictionaries": ["repo"],
   "ignorePaths": [
     ".dict.txt",
     ".config/ltex/disabled-rules.txt",
