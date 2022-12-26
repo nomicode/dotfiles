@@ -1,0 +1,11 @@
+.cspell.json
+.editorconfig
+.markdownlint.yaml
+.prettierrc.yaml
+.yamllint.yaml
+home/.gitconfig
+home/.local/bin/path
+home/.profile
+home/.ssh/known_hosts
+home/.vscode/extensions.json
+home/.vscode/settings.json

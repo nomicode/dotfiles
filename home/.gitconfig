@@ -1,9 +1,41 @@
+[user]
+  name=Naomi Rose
+  email=23469+nomirose@users.noreply.github.com
+
 [pull]
   default = current
   rebase = true
 [push]
   default = current
   autoSetupRemote = true
+
+[rebase]
+  autosquash = true
+
+[core]
+  editor = code --wait --reuse-window
+
+[diff]
+  tool = vscode
+[difftool]
+  prompt = false
+[difftool "vscode"]
+  cmd = code --wait --reuse-window --diff "$LOCAL" "$REMOTE"
+
+[merge]
+  tool = vscode
+[mergetool]
+  prompt = false
+[mergetool "vscode"]
+  cmd = code --wait --reuse-window "$MERGED"
+  trustExitCode = true
+
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+
 [aliases]
   st = status
   co = checkout
