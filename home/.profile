@@ -1,3 +1,5 @@
+# shellcheck shell=sh
+
 # Default code
 # =============================================================================
 # ~/.profile: executed by Bourne-compatible login shells.

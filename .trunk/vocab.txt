@@ -1,0 +1,17 @@
+ci
+devcontainer
+devcontainers
+direnv
+dotfiles
+Dotfiles
+gpgsign
+json
+ltex
+mesg
+nomirose
+NONINFRINGEMENT
+patsubst
+POSIX
+setfacl
+umask
+vscode

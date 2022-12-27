@@ -10,7 +10,7 @@ install_files() {
     done <manifest.txt
 }
 
-install_files "$(pwd)"
+install_files "${PWD}"
 
 # SSH keys
 # =============================================================================
@@ -61,7 +61,7 @@ DOTFILES_DIR="${HOME}/dotfiles"
 
 clone_dotfiles() {
     if ! test -d "${DOTFILES_DIR}"; then
-        if test "$(pwd)" != "${DOTFILES_DIR}"; then
+        if test "${PWD}" != "${DOTFILES_DIR}"; then
             git clone "${DOTFILES_GIT}" "${DOTFILES_DIR}"
         fi
     fi
