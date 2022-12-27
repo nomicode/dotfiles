@@ -1,21 +1,24 @@
 {
-  "allowCompoundWords": true,
-  "caseSensitive": false,
-  "validateDirectives": true,
-  "minWordLength": 4,
-  "files": [".*", "*", ".*/**", "*/**"],
+  "version": 0.2,
   "language": "en-US",
+  "caseSensitive": false,
+  "allowCompoundWords": true,
+  "dictionaries": [
+    "companies",
+    "custom-vocab",
+    "docker",
+    "fileTypes",
+    "misc",
+    "npm",
+    "public-licenses",
+    "shell",
+    "softwareTerms"
+  ],
   "dictionaryDefinitions": [
     {
-      "name": "repo",
-      "path": ".dict.txt",
-      "addWords": true
+      "name": "custom-vocab",
+      "path": "./.trunk/vocab.txt"
     }
   ],
-  "dictionaries": ["repo"],
-  "ignorePaths": [
-    ".dict.txt",
-    ".config/ltex/disabled-rules.txt",
-    ".config/ltex/hidden-false-positives.txt"
-  ]
+  "ignorePaths": ["package.json", "known_hosts"]
 }

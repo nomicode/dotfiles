@@ -1,2 +1,11 @@
-.vscode
 !home/.vscode
+.trunk/actions
+.trunk/logs
+.trunk/notifications
+.trunk/out
+.trunk/plugins
+.trunk/user_trunk.yaml
+.trunk/user.yaml
+.vscode
+*.log
+node_modules
