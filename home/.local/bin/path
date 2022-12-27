@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+# Simple script to demonstrate `PATH` is set up correctly
+
+echo "${PATH}"
