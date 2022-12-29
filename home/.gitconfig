@@ -50,3 +50,6 @@
   clean-ignored = "clean -dX"
   # Print the repository root directory
   root-dir = rev-parse --show-toplevel
+
+[advice]
+  skippedCherryPicks = false
