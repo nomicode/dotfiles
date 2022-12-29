@@ -6,7 +6,7 @@
 install_files() {
     source_dir="${1}"
     while read -r file; do
-        install --compare -Dv "${source_dir}/${file}" "${HOME}"
+        install --compare -Dv "${source_dir}/${file}" "${HOME}/${file}"
     done <manifest.txt
 }
 
