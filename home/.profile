@@ -23,4 +23,10 @@ if test -s "${SSH_KEY_FILE}"; then
 fi
 unset SSH_KEY_FILE
 
+BASH_COMPLETION_FILE="$(brew --prefix)/etc/profile.d/bash_completion.sh"
+if test -f "${BASH_COMPLETION_FILE}"; then
+  . "${BASH_COMPLETION_FILE}"
+fi
+unset BASH_COMPLETION_FILE
+
 eval "$(direnv hook bash)"
