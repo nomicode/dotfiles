@@ -1,16 +1,16 @@
-#!/bin/sh -e
+#!/bin/sh -ex
 
 # Switch default root shell
-sed -i 's,/root:/bin/ash,/root:/bin/bash,' /etc/passwd
+sudo sed -i 's,/root:/bin/ash,/root:/bin/bash,' /etc/passwd
 
 # Disable VS Code first run notice
-config_dir='/root/.config/vscode-dev-containers'
+config_dir='${HOME}/.config/vscode-dev-containers'
 mkdir -p "${config_dir}"
 first_run_file='first-run-notice-already-displayed'
 touch "${config_dir}/${first_run_file}"
 
 # Set up direnv
-cat >>/root/.profile <<EOF
+cat >>"${HOME}/.profile" <<EOF
 
 "\$(direnv export bash)"
 EOF

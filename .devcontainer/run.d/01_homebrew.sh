@@ -1,11 +1,11 @@
-#!/bin/sh -e
+#!/bin/sh -ex
 
 GH_RAW_URL=https://raw.githubusercontent.com
 INSTALL_SCRIPT=install.sh
 INSTALL_URL="${GH_RAW_URL}/Homebrew/install/HEAD/${INSTALL_SCRIPT}"
 
 # Signal to the Homebrew installer that we can run as root
-touch /.dockerenv
+sudo touch /.dockerenv
 
 tmp_dir="$(mktemp -d)"
 clean() { rm -rf "${tmp_dir}"; }

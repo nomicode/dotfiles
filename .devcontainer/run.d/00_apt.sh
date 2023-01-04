@@ -15,7 +15,7 @@ NODESOURCE_SCRIPT=nodesource_setup.sh
 # Set up APT for latest Node.js
 wget -q "${NODESOURCE_URL}" -O "${NODESOURCE_SCRIPT}"
 chmod 755 "${NODESOURCE_SCRIPT}"
-"./${NODESOURCE_SCRIPT}"
+sudo "./${NODESOURCE_SCRIPT}"
 
 YARN_DEB_REPO=https://dl.yarnpkg.com/debian
 YARN_PUBKEY_URL="${YARN_DEB_REPO}/pubkey.gpg"
@@ -25,11 +25,11 @@ YARN_LIST=/etc/apt/sources.list.d/yarn.list
 
 # Set up APT for latest Yarn
 wget -q "${YARN_PUBKEY_URL}" -O "${YARN_PUBKEY}"
-rm -f "${YARN_KEY_PATH}"
-gpg --dearmor --output "${YARN_KEY_PATH}" "${YARN_PUBKEY}"
-cat >"${YARN_LIST}" <<EOF
+sudo rm -f "${YARN_KEY_PATH}"
+sudo gpg --dearmor --output "${YARN_KEY_PATH}" "${YARN_PUBKEY}"
+cat <<EOF
 deb [signed-by=${YARN_KEY_PATH}] ${YARN_DEB_REPO} stable main
-EOF
+EOF | sudo tee -a "${YARN_LIST}" 
 
 # APT setup
 # -----------------------------------------------------------------------------
@@ -37,16 +37,12 @@ EOF
 DEBIAN_FRONTEND=noninteractive
 export DEBIAN_FRONTEND
 
-apt-get -q update -y
-
-apt-get -q upgrade -y
-
-apt-get -q install -y --no-install-recommends \
+sudo apt-get -q update -y
+sudo apt-get -q install -y --no-install-recommends \
     acl \
     build-essential \
     cronic \
     gcc \
     nodejs \
     yarn
-
-rm -rf /var/lib/apt/lists/*
+sudo rm -rf /var/lib/apt/lists/*

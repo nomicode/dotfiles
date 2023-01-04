@@ -2,9 +2,9 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "remoteUser": "root",
+  "remoteUser": "vscode",
   "updateContentCommand": [
-    "./.devcontainer/update-content.sh",
+    "/opt/update-content.sh",
     "${containerWorkspaceFolder}"
   ],
   "customizations": {

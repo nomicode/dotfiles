@@ -15,6 +15,11 @@ fi
 # https://github.com/orgs/community/discussions/26026#discussioncomment-3250078
 whoami="$(whoami)"
 sudo chown -R "${whoami}" "${workspace_dir}"
+
+which setfacl || true
+which direnv || true
+ls -l /home || true
+
 sudo setfacl -bnR "${workspace_dir}"
 
 # Allow direnv to load `.envrc` files in the workspace mount
